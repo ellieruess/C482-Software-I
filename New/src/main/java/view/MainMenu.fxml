@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" xmlns="http://javafx.com/javafx/17.0.11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainMenuController">
+    <children>
+        <MenuBar prefHeight="28.0" prefWidth="960.0">
+            <menus>
+                <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem fx:id="aboutMenuItem" mnemonicParsing="false" onAction="#aboutItemClicked" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Label fx:id="titleLabel" layoutX="36.0" layoutY="70.0" prefHeight="29.0" prefWidth="326.0" text="Inventory Management System">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <HBox layoutY="139.0" prefHeight="317.0" prefWidth="960.0">
+            <children>
+                <AnchorPane prefHeight="310.0" prefWidth="450.0" style="-fx-border-color: #36454F; -fx-border-radius: 10;">
+                    <children>
+                        <TableView fx:id="partTableView" layoutX="25.0" layoutY="46.0" prefHeight="220.0" prefWidth="400.0">
+                            <columns>
+                                <TableColumn fx:id="partIDColumn" prefWidth="65.0" text="Part ID" />
+                                <TableColumn fx:id="partNameColumn" prefWidth="105.0" text="Part Name" />
+                                <TableColumn fx:id="partInventoryColumn" prefWidth="90.0" text="Inventory Level" />
+                                <TableColumn fx:id="partPriceColumn" prefWidth="123.0" text="Price / Cost per Unit   " />
+                            </columns>
+                        </TableView>
+                        <Label fx:id="partsLabel" layoutX="30.0" layoutY="19.0" text="Parts">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="partSearch" layoutX="245.0" layoutY="15.0" onKeyReleased="#partSearching"  prefHeight="26.0" prefWidth="180.0" promptText="Search by Part ID or Name" />
+                        <HBox alignment="BOTTOM_RIGHT" layoutX="196.0" layoutY="265.0" prefHeight="45.0" prefWidth="254.0" spacing="5.0">
+                            <children>
+                                <Button fx:id="addPartButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#addPart" prefHeight="26.0" prefWidth="60.0" text="Add" />
+                                <Button fx:id="modifyPartButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#modifyPart" prefHeight="26.0" prefWidth="60.0" text="Modify" />
+                                <Button fx:id="deletePartButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#deletePart" prefHeight="26.0" prefWidth="60.0" text="Delete" />
+                            </children>
+                            <padding>
+                                <Insets bottom="8.0" right="8.0" />
+                            </padding>
+                        </HBox>
+                    </children>
+                    <HBox.margin>
+                        <Insets left="20.0" right="10.0" />
+                    </HBox.margin>
+                </AnchorPane>
+                <AnchorPane prefHeight="310.0" prefWidth="450.0" style="-fx-border-color: #36454F; -fx-border-radius: 10;">
+                    <children>
+                        <TableView fx:id="productTableView" layoutX="25.0" layoutY="46.0" prefHeight="220.0" prefWidth="400.0">
+                            <columns>
+                                <TableColumn fx:id="productIDColumn" prefWidth="65.0" text="Product ID" />
+                                <TableColumn fx:id="productNameColumn" prefWidth="105.0" text="Product Name" />
+                                <TableColumn fx:id="productInventoryColumn" prefWidth="90.0" text="Inventory Level" />
+                                <TableColumn fx:id="productPriceColumn" prefWidth="123.0" text="Price / Cost per Unit   " />
+                            </columns>
+                        </TableView>
+                        <Label fx:id="productsLabel" layoutX="30.0" layoutY="19.0" text="Products">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="productSearch" layoutX="245.0" layoutY="15.0" onKeyReleased="#productSearching" prefHeight="26.0" prefWidth="180.0" promptText="Search by Product ID or Name" />
+                        <HBox alignment="BOTTOM_RIGHT" layoutX="196.0" layoutY="265.0" prefHeight="45.0" prefWidth="254.0" spacing="5.0">
+                            <children>
+                                <Button fx:id="addProductButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#addProduct" prefHeight="26.0" prefWidth="60.0" text="Add" />
+                                <Button fx:id="modifyProductButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#modifyProduct" prefHeight="26.0" prefWidth="60.0" text="Modify" />
+                                <Button fx:id="deleteProductButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#deleteProduct" prefHeight="26.0" prefWidth="60.0" text="Delete" />
+                            </children>
+                            <padding>
+                                <Insets bottom="8.0" right="8.0" />
+                            </padding>
+                        </HBox>
+                    </children>
+                    <HBox.margin>
+                        <Insets left="10.0" right="20.0" />
+                    </HBox.margin>
+                </AnchorPane>
+            </children>
+        </HBox>
+        <Button fx:id="exitButton" layoutX="870.0" layoutY="475.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#exitApplication" prefHeight="26.0" prefWidth="55.0" text="Exit" />
+    </children>
+</AnchorPane>

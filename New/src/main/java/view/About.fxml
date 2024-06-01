@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1220.0" xmlns="http://javafx.com/javafx/17.0.11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AboutController">
+   <children>
+      <TextArea fx:id="aboutTextField" layoutY="28.0" prefHeight="572.0" prefWidth="1220.0" style="-fx-border-color: #36454F; -fx-border-width: 2;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="38.0" />
+      <HBox alignment="CENTER" prefHeight="38.0" prefWidth="1220.0" spacing="100.0">
+         <children>
+            <Button fx:id="assignmentDetailsButton" mnemonicParsing="false" onMouseClicked="#assignmentDetailsClicked" prefHeight="26.0" prefWidth="140.0" text="Assignment Details" />
+            <Button fx:id="studentInfoButton" mnemonicParsing="false" onMouseClicked="#studentInfoClicked" prefHeight="26.0" prefWidth="140.0" text="Student Info" />
+            <Button fx:id="runtimeErrorButton" mnemonicParsing="false" onMouseClicked="#runtimeErrorClicked" prefHeight="26.0" prefWidth="140.0" text="Runtime Error" />
+            <Button fx:id="futureEnhancementsButton" mnemonicParsing="false" onMouseClicked="#futureEnhancementsClicked" prefHeight="26.0" prefWidth="140.0" text="Future Enhancements" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
