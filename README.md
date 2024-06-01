@@ -7,17 +7,21 @@ and their parts, each with an assigned unique ID number. In addition, users may 
 include a connected search function that queries the ID number and part / product name. In order to maintain data integrity, several features are included to validate user 
 input.
 
-Included in this folder are the provided UML Diagram and GUI Mockup on which my project is based.
+This project is based on a UML Diagram and GUI Mockup which were provided by the school. I have included them here.
 
 _<p>
 <br>Languages: Java; JavaFX
-<br>Software Used: IntelliJ IDE Community Edition 2024.1.2, JavaFX SceneBuilder
-<br>Additional SDKs: Oracle OpenJDK 17.0.11; JavaFX 17.0.11
+<br>IDE: JetBrains IntelliJ IDEA Community Edition 2024.1.2
+<br>Visual Layout Tool: JavaFX SceneBuilder
+<br>JDK Version Used: Oracle OpenJDK 17.0.11
+<br>JavaFX Used: JavaFX 17.0.11
 <br>
 <br>
 <br></p>_
 
 ## ASSIGNMENT
+
+Below are the assignment details provided by the school. 
 
 ### SCENARIO:
 
