@@ -27,7 +27,7 @@ would be a user-defined integer. This additional functionality would be able to 
 the purchasing or creation of parts / products.
  */
 
-/** This class declares the Scheduling system application.
+/** This class declares the Inventory Management system application.
  *
  */
 public class Main extends Application {
