@@ -1,6 +1,6 @@
-# C482-Software-I
+# C482: Software I
 
-**AUTHOR'S PROJECT NOTES**
+## AUTHOR'S PROJECT NOTES
 
 This repository contains my final project for Software I at WGU, an inventory management system containing nonpersistent data. Users may add, modify or remove both products 
 and their parts, each with an assigned unique ID number. In addition, users may connect products to the parts from which the product is constructed (if any). All tables 
@@ -9,38 +9,43 @@ input.
 
 Included in this folder are the provided UML Diagram and GUI Mockup on which my project is based.
 
-Languages: Java; JavaFX
-Software Used: IntelliJ IDE Community Edition 2024.1.2, JavaFX SceneBuilder
-Additional SDKs: Oracle OpenJDK 17.0.11; JavaFX 17.0.11
+_<p>
+<br>Languages: Java; JavaFX
+<br>Software Used: IntelliJ IDE Community Edition 2024.1.2, JavaFX SceneBuilder
+<br>Additional SDKs: Oracle OpenJDK 17.0.11; JavaFX 17.0.11
+<br>
+<br>
+<br></p>_
 
-**ASSIGNMENT**
+## ASSIGNMENT
 
-SCENARIO:
+### SCENARIO:
 
-You are working for a small manufacturing organization that has outgrown its current inventory system. Members of the organization have been using a spreadsheet program to 
-manually enter inventory additions, deletions, and other data from a paper-based system but would now like you to develop a more sophisticated inventory program.
+    You are working for a small manufacturing organization that has outgrown its current inventory system. Members of the organization have been using a spreadsheet program
+    to manually enter inventory additions, deletions, and other data from a paper-based system but would now like you to develop a more sophisticated inventory program.
 
-You have been provided with a mock-up of the user interface to use in the design and development of the system (see the attached “Software 1 GUI Mock-Up”) and a class diagram 
-to assist you in your work (see the attached “UML Class Diagram”). The organization also has specific business requirements that must be considered for the application. A
-systems analyst created the solution statements outlined in the requirements section of this task based on the business requirements. You will use these solution statements 
-to develop your application.
+    You have been provided with a mock-up of the user interface to use in the design and development of the system (see the attached “Software 1 GUI Mock-Up”) and a class
+    diagram to assist you in your work (see the attached “UML Class Diagram”). The organization also has specific business requirements that must be considered for the   
+    application. A systems analyst created the solution statements outlined in the requirements section of this task based on the business requirements. You will use these 
+    solution statements to develop your application.
 
-COMPETENCIES:
+### COMPETENCIES:
 
-Classes and Interfaces - The graduate designs software solutions with appropriate classes, objects, methods, and interfaces to achieve specific goals.
+    Classes and Interfaces - The graduate designs software solutions with appropriate classes, objects, methods, and interfaces to achieve specific goals.
 
-Object-Oriented Principles - The graduate implements object-oriented design principles (e.g., inheritance, encapsulation, and abstraction) in developing applications for 
-ensuring the application’s scalability.
+    Object-Oriented Principles - The graduate implements object-oriented design principles (e.g., inheritance, encapsulation, and abstraction) in developing applications for 
+    ensuring the application’s scalability.
 
-Application Development - The graduate produces applications using Java programming language constructs to meet business requirements.
+    Application Development - The graduate produces applications using Java programming language constructs to meet business requirements.
 
-Exception Handling - The graduate incorporates simple exception handling in application development for improving user experience and application stability.
+    Exception Handling - The graduate incorporates simple exception handling in application development for improving user experience and application stability.
 
-User Interface Development - The graduate develops user interfaces to meet project requirement
+    User Interface Development - The graduate develops user interfaces to meet project requirement
 
-REQUIREMENTS:
+### REQUIREMENTS:
 
- I.  User Interface
+    I.  User Interface
+ 
           A.  Create a JavaFX application with a graphical user interface (GUI) based on the attached “Software 1 GUI Mock-Up.” You may use JavaFX with or without FXML to     
               create your GUI, or you may use Scene Builder to create your FXML file; use of Swing is not permitted. The user interface (UI) should closely match the          
               organization of the GUI layout and contain all UI components (buttons, text fields, etc.) in each of the following GUI mock-up forms:
@@ -61,7 +66,7 @@ REQUIREMENTS:
               comments where the error that was corrected occurred, and include the future enhancement comments in the comments of the main class. Please start these comments 
               with “RUNTIME ERROR” or “FUTURE ENHANCEMENT” as applicable.
                
-  II.  Application
+    II.  Application
           A.  Create classes with data and logic that map to the UML class diagram and include the supplied Part class provided in the attached “Part.java.” Do not alter the 
               provided class. Include all the classes and members \nas shown in the UML diagram. Your code should demonstrate the following:
                 1.  Inheritance
@@ -150,14 +155,14 @@ REQUIREMENTS:
                 
                 Note: The Remove Associated Part button removes a selected part from the bottom table. (This dissociates or removes a part from a product.)
                 
-          G.  Write code to implement input validation and logical error checks using a dialog box or message in the UI displaying a descriptive error message for each of the
+          E.  Write code to implement input validation and logical error checks using a dialog box or message in the UI displaying a descriptive error message for each of the
               following circumstances:
                 1.  Min should be less than Max; and Inv should be between those two values.
                 2.  The user should not delete a product that has a part associated with it.
                 3.  The application confirms the “Delete” and “Remove” actions.
                 4.  The application will not crash when inappropriate user data is entered in the forms; instead, error messages should be generated.
                 
-          H.  Provide a folder containing Javadoc files that were generated from the IDE or via the command prompt from part B. In a comment above the main method header
+          F.  Provide a folder containing Javadoc files that were generated from the IDE or via the command prompt from part B. In a comment above the main method header
               declaration, please specify where this folder is located.
                 
-          I.  Demonstrate professional communication in the content and presentation of your submission.
+          G.  Demonstrate professional communication in the content and presentation of your submission.
